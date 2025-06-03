@@ -1,0 +1,43 @@
+{
+  "name": "node-speech-to-speech",
+  "version": "0.0.1",
+  "description": "The whole pipeline from microphone stream to synthesized speech, right on your fingertips",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kutalia/node-speech-to-speech.git"
+  },
+  "keywords": [
+    "ai",
+    "speech-to-speech",
+    "text-to-speech",
+    "speech-to-text",
+    "whisper",
+    "whisper.cpp",
+    "openai",
+    "onnx",
+    "discord",
+    "transcription",
+    "transcribe",
+    "translation"
+  ],
+  "author": "Kutalia",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Kutalia/node-speech-to-speech/issues"
+  },
+  "homepage": "https://github.com/Kutalia/node-speech-to-speech#readme",
+  "dependencies": {
+    "@huggingface/transformers": "^3.5.2",
+    "command-line-args": "^6.0.1",
+    "echogarden": "^2.9.0",
+    "naudiodon2": "^2.5.0",
+    "node-global-key-listener": "^0.3.0",
+    "smart-whisper": "^0.8.1",
+    "wave-resampler": "^1.0.0"
+  }
+}
