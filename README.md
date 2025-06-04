@@ -8,10 +8,10 @@ For example:
 
 1) `npm install`
 2) `npm install pm2 -g`
-3) `pm2 start record-mic.js --no-daemon --watch -- --input-sample-rate=48000 --input-lang-transcribe=en --input-device="INPUT 1/2" --output-device="CABLE-A Input"`
+3) `pm2 start record-mic.js --no-daemon --watch -- --input-sample-rate=48000 --input-lang-transcribe=en --input-lang-code=eng_Latn --input-device="INPUT 1/2" --output-device="CABLE-A Input"`
 
-To close the program, you can use:
-`pm2 stop record-mic`
+To fully kill the program process, you can use:
+`pm2 delete record-mic`
 
 ## Options
 `device-sample-rate` - your input and output devices sample rate in Hz. check your sound settings from Windows control panel

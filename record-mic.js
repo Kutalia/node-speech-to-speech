@@ -147,12 +147,9 @@ addHotkeyUpListener(HOTKEY, () => {
       }
     })
 
-    setTimeout(async () => { // Play after microphone stream finishes playing
-      const rs_ = Readable.from(Buffer.from(upSampledVoice.buffer)) // Doesn't seem to work well
-      rs_.pipe(ao)
-    }, 200)
+    const rs_ = Readable.from(Buffer.from(upSampledVoice.buffer))
+    rs_.pipe(ao)
 
-    // When audio output is not last step, instead of piping we can synchronously read from buffer and write into ao to avoid underflow
     ao.start()
   }
 
